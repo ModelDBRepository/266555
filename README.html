@@ -1,0 +1,32 @@
+<html>
+<p># Entrainment2019
+</p>
+<p>Theoretical investigation of the effect of divisive inhibition on entrainment
+</p>
+<p>This is the readme for the paper:
+</p>
+<p>Papasavvas CA, Trevelyan AJ, Kaiser M, Wang Y (2020) Divisive gain
+modulation enables flexible and rapid entrainment in a neocortical
+microcircuit model. J Neurophysiol 123:1133-1143
+</p>
+<p>This model was contributed by C Papasavvas.
+</p>
+<p>Use the script entrainmentDemo to manipulate the parameters (initial phase diff., amplitude, and frequency) and run the simulation.
+</p>
+<p>A parameter set is loaded from optimSets.mat and the function transformSet is used to transform a 5-parameter set to an 8-parameter set by filling in the known connection weight ratios.
+</p>
+<p>The script calls the function solverODEvarInput2 which collects all the parameters and runs the enrtainment scenario/simulation
+</p>
+<p>The ODE solver calls the modelFunqNELvarInputPhase which describes the model
+</p>
+<p>The freq_analysis2 function is called after the ODE solver to do spectral analysis on the generated signal
+</p>
+<p>The entrainmentDemo in its default state produces the following graphs:
+</p>
+<p><img src="./screenshot1.png" alt="screenshot1">
+<img src="./screenshot2.png" alt="screenshot2">
+</p>
+<p>if the phase is changed to 0 in the entrainmentDemo.m file then a graph that corresponds to Fig3A is produced
+</p>
+<p><img src="./screenshot1phase0.png" alt="screenshot1phase0".</p>
+</html>
