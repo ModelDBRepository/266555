@@ -11,13 +11,13 @@ microcircuit model. J Neurophysiol 123:1133-1143
 </p>
 <p>This model was contributed by C Papasavvas.
 </p>
-<p>Use the script entrainmentDemo to manipulate the parameters (initial phase diff., amplitude, and frequency) and run the simulation.
+<p>Use the script entrainmentDemo to manipulate the parameters (initial phase diff., amplitude, frequency, and divisiveness parameter) and run the simulation.
 </p>
-<p>The script calls the function solverODEvarInput2 which collects all the parameters and runs the enrtainment scenario/simulation
+<p>The script calls the function solverODEreduc which collects all the parameters and runs the enrtainment scenario/simulation.
 </p>
-<p>The ODE solver calls the modelFunqNELvarInputPhase which describes the model
+<p>The solverODEreduc function calls the modelFunqVarInput which describes the model.
 </p>
-<p>The freq_analysis2 function is called after the ODE solver to do spectral analysis on the generated signal
+<p>The freq_analys function is called after the simulation for the spectral analysis of the generated signal.
 </p>
 <p>The entrainmentDemo in its default state produces the following graphs:
 </p>
